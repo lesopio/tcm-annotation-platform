@@ -108,4 +108,4 @@ python -m pytest marker/tests
 
 ## License
 
-暂未附带开源许可证（All rights reserved）。如需引用或二次开发，请先联系仓库所有者。
+[MIT](./LICENSE) © 2026 lesopio
