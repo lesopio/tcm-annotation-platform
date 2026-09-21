@@ -1,0 +1,52 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+marker/config/users.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Node / frontend build output
+node_modules/
+dist/
+.vite/
+coverage/
+
+# Runtime data and backups
+local-backups/
+*.sqlite3
+*.sqlite3-*
+*.db
+*.log
+*.zip
+*.pdf
+marker/data/page_images/
+marker/data/books/
+marker/data/imports/
+marker/data/exports/
+marker/data/ocr_raw/
+marker/data/.ocr-settings.key
+marker/data/.semantic-settings.key
+marker/data/custom_glyphs/
+marker/data/LC_evidence_pages/
+raw_book/
+
+# Generated viewer datasets
+viewer/public/bencao-output/
+viewer/public/bencao-versions/
+marker/frontend/public/bencao-output/
+marker/frontend/public/bencao-versions/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

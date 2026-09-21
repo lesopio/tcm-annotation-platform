@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/schemas/annotation-v2.schema.json",
+  "title": "古籍标注导出 v2",
+  "type": "object",
+  "required": ["schema_version", "book", "pages"],
+  "properties": {
+    "schema_version": { "const": "2.0" },
+    "book": {
+      "type": "object",
+      "required": ["id", "title"],
+      "properties": {
+        "id": { "type": "integer" },
+        "title": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["page", "assignment", "regions", "lines", "chars"],
+        "properties": {
+          "page": { "type": "object" },
+          "assignment": { "type": "object" },
+          "regions": { "type": "array" },
+          "lines": { "type": "array" },
+          "chars": { "type": "array" },
+          "ocr": { "type": ["object", "null"] },
+          "revisions": { "type": "array" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

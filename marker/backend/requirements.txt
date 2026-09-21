@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+python-jose
+passlib
+python-multipart
+pymupdf
+pillow
+numpy
+python-dotenv
+cryptography
+requests
+paddleocr>=3.5,<4

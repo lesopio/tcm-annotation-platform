@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/schemas/annotation-v3.schema.json",
+  "title": "孟河医派古籍语义标注与知识图谱导出 v3",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "book", "ontology", "text_units", "entities", "relations", "medical_cases", "adjudications", "knowledge_graph"],
+  "properties": {
+    "schema_version": {"const": "3.0"},
+    "generated_at": {"type": "string"},
+    "book": {"type": "object", "required": ["id", "title", "page_count"]},
+    "ontology": {"type": "array"},
+    "text_units": {"type": "array"},
+    "entities": {"type": "array"},
+    "relations": {"type": "array"},
+    "medical_cases": {"type": "array"},
+    "adjudications": {"type": "array"},
+    "guidelines": {"type": "array"},
+    "knowledge_graph": {
+      "type": "object",
+      "required": ["nodes", "edges"],
+      "properties": {"nodes": {"type": "array"}, "edges": {"type": "array"}}
+    }
+  },
+  "additionalProperties": true
+}
